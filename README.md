@@ -7,10 +7,16 @@ Projeto APS de Lógica da Computação - Linguagem de Tarefas
 
 ## Sobre a Linguagem
 
-A linguagem foi criada para ser uma linguagem simples para montar listas de tarefas.  
-A ideia é ajudar a organizar a vida de alguem desorganizado mostrando uma lista de afazeres.
+A linguagem foi criada pra ser uma linguagem simples de organizar tarefas com comandos diretos e intuitivos.
 
-Com poucos comandos, você pode adicionar tarefas, marcar quando terminar e listar tudo que tem pra fazer.
+Com ela, dá pra:
+- Criar tarefas
+- Marcar como concluídas
+- Listar todas
+- Fazer coisas se alguma condição for verdadeira
+- E até repetir ações com `enquanto`!
+
+Simples, funcional e **Turing completa**
 
 ---
 
@@ -18,19 +24,15 @@ Com poucos comandos, você pode adicionar tarefas, marcar quando terminar e list
 
 | Palavra-chave | Para que serve |
 |:---|:---|
-| `tarefa` | Cria uma nova tarefa |
-| `prioridade` | Define se a tarefa é mais importante (`alta`) ou normal |
-| `prazo` | Coloca uma data limite para a tarefa |
+| `tarefa` | Adiciona uma tarefa nova |
+| `prioridade` | Marca a tarefa como `alta` ou `normal` |
+| `prazo` | Define uma data ou limite |
+| `status` | Permite criar a tarefa já como `concluida` ou `pendente` |
 | `concluir` | Marca uma tarefa como feita |
-| `mostrar` | Mostra todas as tarefas registradas |
-
----
-
-## O que tem de diferente
-
-Além de criar tarefas normais, na linguagem também dá pra já criar uma tarefa que nasce como **concluída** ou **pendente**.
-
-Isso ajuda a registrar coisas que já foram feitas, sem precisar ficar mandando `concluir` depois.
+| `mostrar` | Lista todas as tarefas criadas |
+| `se` | Executa um bloco se uma condição for verdadeira |
+| `enquanto` | Repete um bloco enquanto uma condição for verdadeira |
+| `{` `}` | Agrupa vários comandos dentro de blocos |
 
 ---
 
@@ -41,7 +43,9 @@ programa ::= { comando };
 
 comando ::= comando_tarefa
           | comando_concluir
-          | comando_mostrar;
+          | comando_mostrar
+          | comando_se
+          | comando_enquanto;
 
 comando_tarefa ::= 'tarefa' STRING (prioridade | prazo | tarefa_booleana)?;
 
@@ -54,3 +58,10 @@ tarefa_booleana ::= 'status' ('concluida' | 'pendente');
 comando_concluir ::= 'concluir' STRING;
 
 comando_mostrar ::= 'mostrar';
+
+comando_se ::= 'se' STRING bloco;
+
+comando_enquanto ::= 'enquanto' STRING bloco;
+
+bloco ::= '{' { comando } '}';
+
