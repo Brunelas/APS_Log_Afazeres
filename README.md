@@ -64,4 +64,19 @@ comando_se ::= 'se' STRING bloco;
 comando_enquanto ::= 'enquanto' STRING bloco;
 
 bloco ::= '{' { comando } '}';
+```
+
+## Exemplo de Código
+
+tarefa "Estudar para APS"
+tarefa "Enviar e-mail" status concluida
+
+se "Estudar para APS está pendente" {
+  concluir "Estudar para APS"
+}
+
+enquanto "ainda tem tarefa pendente" {
+  mostrar
+}
+
 
