@@ -14,7 +14,7 @@ Com ela, dá pra:
 - Marcar como concluídas
 - Listar todas
 - Fazer coisas se alguma condição for verdadeira
-- E até repetir ações com `enquanto`!
+- E repetir ações com `enquanto`
 
 Simples, funcional e **Turing completa**
 
