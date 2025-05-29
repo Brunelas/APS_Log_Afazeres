@@ -15,9 +15,6 @@ Com ela, dá pra:
 - Listar todas
 - Fazer coisas se alguma condição for verdadeira
 - E repetir ações com `enquanto`
-
-Simples, funcional e **Turing completa**
-
 ---
 
 ## Palavras-chave da Linguagem
