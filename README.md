@@ -35,15 +35,7 @@ Com ela, dá pra:
 | `limpar_lista`    | Limpa todas as tarefas da lista                   |
 | `se`, `else`      | Estruturas condicionais (if/else)                 |
 | `enquanto`        | Laço de repetição (while)                         |
-| `Println(...)`    | Imprime texto ou resultado de uma expressão       |
-| `Scan()`          | Lê um número do usuário                           |
-| `var`             | Declara uma variável com tipo                     |
-| `func`            | Declara uma função                                |
-| `return`          | Retorna um valor de dentro de uma função          |
-| `true`, `false`   | Literais booleanos                                |
-| `+`, `-`, `*`, `/`| Operadores aritméticos                            |
-| `==`, `>`, `<`    | Operadores relacionais                            |
-| `&&`, `||`, `!`   | Operadores lógicos booleanos                      |
+
 
 ---
 
