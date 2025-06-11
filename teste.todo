@@ -1,0 +1,28 @@
+tarefa "lavar louça"
+tarefa "estudar lógica"
+tarefa "fazer mercado"
+
+feito
+
+var pendencias int = 2
+
+se (pendencias > 2) {
+  Println("Você tem muitas pendências ainda!")
+} else {
+  Println("Está tranquilo por enquanto!")
+}
+
+var contador int = 0
+enquanto (contador < pendencias) {
+  Println("Vamos revisar sua lista!")
+  contador = contador + 1
+}
+
+concluir "lavar louça"
+concluir "estudar lógica"
+concluir "fazer mercado"
+
+feito
+
+limpar_lista
+mostrar
