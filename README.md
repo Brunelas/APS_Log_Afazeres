@@ -24,17 +24,26 @@ Com ela, dá pra:
 
 ## Palavras-chave da Linguagem
 
-| Palavra-chave | Para que serve |
-|:---|:---|
-| `tarefa` | Adiciona uma tarefa nova |
-| `prioridade` | Marca a tarefa como `alta` ou `normal` |
-| `prazo` | Define uma data ou limite |
-| `status` | Permite criar a tarefa já como `concluida` ou `pendente` |
-| `concluir` | Marca uma tarefa como feita |
-| `mostrar` | Lista todas as tarefas criadas |
-| `se` | Executa um bloco se uma condição for verdadeira |
-| `enquanto` | Repete um bloco enquanto uma condição for verdadeira |
-| `{` `}` | Agrupa vários comandos dentro de blocos |
+## 🔑 Palavras-chave da Linguagem
+
+| Palavra-chave     | Significado                                       |
+|-------------------|---------------------------------------------------|
+| `tarefa`          | Adiciona uma nova tarefa                          |
+| `mostrar`         | Exibe a lista de tarefas com seus status          |
+| `concluir`        | Marca uma tarefa como concluída                   |
+| `feito`           | Mostra se todas as tarefas foram feitas           |
+| `limpar_lista`    | Limpa todas as tarefas da lista                   |
+| `se`, `else`      | Estruturas condicionais (if/else)                 |
+| `enquanto`        | Laço de repetição (while)                         |
+| `Println(...)`    | Imprime texto ou resultado de uma expressão       |
+| `Scan()`          | Lê um número do usuário                           |
+| `var`             | Declara uma variável com tipo                     |
+| `func`            | Declara uma função                                |
+| `return`          | Retorna um valor de dentro de uma função          |
+| `true`, `false`   | Literais booleanos                                |
+| `+`, `-`, `*`, `/`| Operadores aritméticos                            |
+| `==`, `>`, `<`    | Operadores relacionais                            |
+| `&&`, `||`, `!`   | Operadores lógicos booleanos                      |
 
 ---
 
