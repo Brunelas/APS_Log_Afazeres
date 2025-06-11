@@ -81,13 +81,14 @@ Com ela, dá pra:
 
 ## Exemplo de Código
 
+```todo
 tarefa "lavar louça"
 tarefa "estudar lógica"
 tarefa "fazer mercado"
 
 feito
 
-var pendencias int = 3
+var pendencias int = 2
 
 se (pendencias > 2) {
   Println("Você tem muitas pendências ainda!")
@@ -109,6 +110,7 @@ feito
 
 limpar_lista
 mostrar
+```
 
 ## Saida esperada
 
@@ -117,8 +119,7 @@ Tarefa adicionada: "lavar louça"
 Tarefa adicionada: "estudar lógica"
 Tarefa adicionada: "fazer mercado"
 Ainda faltam 3 tarefas.
-Você tem muitas pendências ainda!
-Vamos revisar sua lista!
+Está tranquilo por enquanto!
 Vamos revisar sua lista!
 Vamos revisar sua lista!
 Tarefa concluída: lavar louça
@@ -127,9 +128,6 @@ Tarefa concluída: fazer mercado
 Sim, tudo pronto por agora!
 Lista de tarefas foi **resetada** com sucesso!
 Lista de tarefas:
-- lavar louça ✅
-- estudar lógica ✅
-- fazer mercado ✅
 
 🤔 Curiosidades
 - A ToDoLang reconhece comandos escritos diretamente em português como tarefa, mostrar, feito, concluir, se, enquanto, entre outros.
