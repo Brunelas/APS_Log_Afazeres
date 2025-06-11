@@ -142,4 +142,15 @@ Esse limite de 5 tarefas foi escolhido porque achei que um aluno do Insper com 5
 - Foi implementada 100% em Python, com parsing manual e execução direta dos comandos.
 
 
+## 🛠️ Como Compilar / Executar
+
+A linguagem **ToDoLang** é interpretada diretamente em **Python**, utilizando o compilador da disciplina **Lógica da Computação — versão 2.4**, estendido para suportar comandos específicos de organização de tarefas.
+
+### ✅ Passos:
+
+1. Escreva seu código em um arquivo com a extensão `.todo` (exemplo: `teste.todo`)
+2. Execute o interpretador com o seguinte comando no terminal:
+
+```bash
+python Projeto_ToDoLang.py teste.todo
 
