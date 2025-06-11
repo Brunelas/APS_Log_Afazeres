@@ -42,41 +42,31 @@ Com ela, dá pra:
 ## EBNF da Linguagem
 
 ```ebnf
-<programa>       ::= { <comando> '\n' }
+programa         ::= comando { comando }
 
-<comando>        ::= "tarefa" <string>
-                  | "mostrar"
-                  | "concluir" <string>
-                  | "feito"
-                  | "limpar_lista"
-                  | <comando_controle>
-                  | <atribuicao>
-                  | <funcao>
-                  | <print>
+comando          ::= tarefa_cmd
+                  | mostrar_cmd
+                  | concluir_cmd
+                  | feito_cmd
+                  | limpar_cmd
+                  | se_cmd
+                  | enquanto_cmd
 
-<comando_controle> ::= "se" <expressao> <bloco> [ "else" <bloco> ]
-                     | "enquanto" <expressao> <bloco>
+tarefa_cmd       ::= "tarefa" STRING
+mostrar_cmd      ::= "mostrar"
+concluir_cmd     ::= "concluir" STRING
+feito_cmd        ::= "feito"
+limpar_cmd       ::= "limpar_lista"
 
-<atribuicao>     ::= "var" <ident> <tipo> [ "=" <expressao> ]
-                  | <ident> "=" <expressao>
+se_cmd           ::= "se" "(" expressao ")" bloco ["else" bloco]
+enquanto_cmd     ::= "enquanto" "(" expressao ")" bloco
 
-<print>          ::= "Println" "(" <expressao> ")"
+expressao        ::= STRING | NUMBER | ID
+                  | expressao OP expressao
+                  | "(" expressao ")"
 
-<funcao>         ::= "func" <ident> "(" [ <parametros> ] ")" [ <tipo> ] <bloco>
+bloco            ::= "{" { comando } "}"
 
-<bloco>          ::= '{' { <comando> '\n' } '}'
-
-<expressao>      ::= <termo> { ("+"|"-"|"||") <termo> }
-
-<termo>          ::= <fator> { ("*"|"/"|"&&") <fator> }
-
-<fator>          ::= <numero> | <string> | <bool> | <ident> | "Scan()" | "(" <expressao> ")"
-
-<tipo>           ::= "int" | "bool" | "string"
-<ident>          ::= [a-zA-Z_][a-zA-Z0-9_]*
-<string>         ::= "\"" { caractere } "\""
-<numero>         ::= [0-9]+
-<bool>           ::= "true" | "false"
 ```
 
 ## Exemplo de Código
