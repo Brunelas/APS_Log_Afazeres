@@ -7,9 +7,9 @@ Projeto APS de Lógica da Computação - Linguagem de Tarefas
 
 ## Motivação Sobre a Linguagem 
 
-A ideia da ToDoLang surgiu enquanto eu mexia no aplicativo **Notion** para me organizar. Naquele momento, pensei: *"E se existisse uma linguagem simples, direta, quase como pseudocódigo, para escrever e executar listas de tarefas?"*
+A ideia da Linguagem de Tarefas surgiu enquanto eu mexia no aplicativo **Notion** para me organizar. Naquele momento, pensei: *"E se existisse uma linguagem simples, direta, quase como pseudocódigo, para escrever e executar listas de tarefas?"*
 
-Foi aí que nasceu a **ToDoLang**: uma linguagem minimalista, criada para organizar rotinas e pendências de forma rápida, com comandos claros como `tarefa`, `mostrar`, `feito` e `concluir`.
+Foi aí que nasceu a **Linguagem de Tarefas**: uma linguagem minimalista, criada para organizar rotinas e pendências de forma rápida, com comandos claros como `tarefa`, `mostrar`, `feito` e `concluir`.
 
 
 A linguagem foi criada pra ser uma linguagem simples de organizar tarefas com comandos diretos e intuitivos.
@@ -24,7 +24,7 @@ Com ela, dá pra:
 
 ## Palavras-chave da Linguagem
 
-## 🔑 Palavras-chave da Linguagem
+## Palavras-chave da Linguagem
 
 | Palavra-chave     | Significado                                       |
 |-------------------|---------------------------------------------------|
@@ -114,7 +114,7 @@ mostrar
 
 ## Saida esperada
 
-
+```
 Tarefa adicionada: "lavar louça"
 Tarefa adicionada: "estudar lógica"
 Tarefa adicionada: "fazer mercado"
@@ -128,22 +128,22 @@ Tarefa concluída: fazer mercado
 Sim, tudo pronto por agora!
 Lista de tarefas foi **resetada** com sucesso!
 Lista de tarefas:
-
-🤔 Curiosidades
-- A ToDoLang reconhece comandos escritos diretamente em português como tarefa, mostrar, feito, concluir, se, enquanto, entre outros.
+```
+Curiosidades
+- A Linguagem de Tarefas reconhece comandos escritos diretamente em português como tarefa, mostrar, feito, concluir, se, enquanto, entre outros.
 
 - Se você tentar adicionar mais de 5 tarefas pendentes, a linguagem te impede e ainda dá uma bronca:
 
   "Não posso adicionar mais tarefas. Você já está com muitas, coitado!"
 
-Esse limite de 5 tarefas foi escolhido porque achei que um aluno do Insper com 5 disciplinas já teria tarefas demais pra se organizar num só dia 😅
+Esse limite de 5 tarefas foi escolhido porque achei que um aluno do Insper com 5 disciplinas já teria tarefas demais pra se organizar num só dia 
 
 - Foi implementada 100% em Python, com parsing manual e execução direta dos comandos.
 
 
-## 🛠️ Como Compilar / Executar
+## Como Compilar / Executar
 
-A linguagem **ToDoLang** é interpretada diretamente em **Python**, utilizando o compilador da disciplina **Lógica da Computação — versão 2.4**, estendido para suportar comandos específicos de organização de tarefas.
+A linguagem **Linguagem de Tarefas** é interpretada diretamente em **Python**, utilizando o compilador da disciplina **Lógica da Computação — versão 2.4**, estendido para suportar comandos específicos de organização de tarefas.
 
 ### ✅ Passos:
 
